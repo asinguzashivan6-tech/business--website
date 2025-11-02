@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban feet business website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<h4>Ship & pay globally</h4>
+<div class="muted">Choose your country and currency to see local pricing & delivery estimates</div>
+<select id="country" onchange="renderProducts()">
+<option value="US">United States</option>
+<option value="GB">United Kingdom</option>
+<option value="UG">Uganda</option>
+<option value="DE">Germany</option>
+<option value="KE">Kenya</option>
+</select>
+<select id="currency" onchange="renderProducts()">
+<option value="USD">USD - $</option>
+<option value="GBP">GBP - £</option>
+<option value="EUR">EUR - €</option>
+<option value="UGX">UGX - USh</option>
+<option value="KES">KES - KSh</option>
+</select>
+
+
+<div>
+<div class="muted">Delivery estimate</div>
+<div id="eta" style="font-weight:700;">3–8 business days</div>
+</div>
+</aside>
+</section>
+
+
+<main>
+<section id="products">
+<h2>Featured Products</h2>
+<img src="3.jpg" alt="my photo">
+<img src="shi 4.jpg" alt="my photo">
+<img src="7.jpg" alt="my pic">
+<div class="grid" id="productGrid"></div>
+</section>
+
+
+<section id="about">
+<h2>Urban Feet Business</h2>
+<img src="shi 1.jpg" alt="my gallery">
+<img src="shi 2.jpg" alt="my gallery">
+<p class="muted">urban feet business as a local shoemaker and grew into a global shop delivering comfortable, stylish and durable shoes.</p>
+</section>
+
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form onsubmit="submitForm(event)">
+<input id="name" placeholder="Your name" required />
+<input id="email" placeholder="Email" type="email" required />
+<textarea id="message" placeholder="How can we help?" rows="6" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+</form>
+</section>
+</main>
+
+
+<footer>
+<div class="muted">© <span id="year"></span> urban feet — Designed for local and international customers.</div>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
